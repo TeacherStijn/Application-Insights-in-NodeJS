@@ -1,6 +1,6 @@
 let appInsights = require('applicationinsights');
 // volgende stap kan veiliger:
-let appConn = appInsights.setup('InstrumentationKey=63143a8b-7224-40ce-8f15-a9dcf48df64c;IngestionEndpoint=https://westeurope-5.in.applicationinsights.azure.com/;LiveEndpoint=https://westeurope.livediagnostics.monitor.azure.com/');
+let appConn = appInsights.setup('InstrumentationKey=OM_NOG_IN_TE_VULLEN');
 appConn.start();
 const APP = require('express')();
 const PORT = 1234;
@@ -113,7 +113,7 @@ APP.post(
 		DATA.push(sentData)
 		
 		res.status(200).send(
-			"hai"
+			"It is alive"
 		);
 		
 	}
